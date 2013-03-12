@@ -1,0 +1,23 @@
+-# Figure with image ---------------------------------------------------------
+%p Figures are usually used to refer to images:
+
+-# Example
+= featureExample do
+  %figure
+    %img{ :src => 'http://lorempixum.com/680/400/abstract/?r', :alt => 'Example image' }
+    %figcaption
+      %h4 Figure Heading
+      %p This is a placeholder image, with supporting caption.
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <figure>
+      <img alt="Example image" src="http://lorempixum.com/680/400/abstract/?r" />
+      <figcaption>
+        <h4>Figure Heading</h4>
+        <p>This is a placeholder image, with supporting caption.</p>
+      </figcaption>
+    </figure>
+-# /Code

@@ -1,0 +1,5 @@
+%ul.widget-list
+  - (1..5).each do
+    %li.widget-list--item
+      %a.widget-comments-list--comment{ :href => '#' } #{ lorem.words(5).capitalize }...
+      %a.widget-comments-list--author{ :href => '#' } #{ lorem.name }

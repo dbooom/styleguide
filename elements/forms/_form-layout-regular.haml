@@ -1,0 +1,78 @@
+-# Form layout regular -------------------------------------------------------
+%p First one is the default style, you don't need any additional classes for this kind of forms. The default layout style keeps all form elements in order, one after another.
+
+-# Example
+= featureExample do
+  %form{ :action => '/' }
+    %p.form-description This is a sample description text which should tell us about purpose of this form, and may be give us some tips about how to fill it correctly and submit to the server.
+
+    \
+
+    / Control group
+    .form-control-group
+      %label.form-control-label{ :for => 'form-layout-regular-1' } Username
+      .form-control
+        %input#form-layout-regular-1.form-input-size-xxlarge{ :title => 'Please enter username', :type => 'text', :placeholder => 'Enter your username…', :required => 'required' }
+        %p.form-control-help This is the sample help information about this input field.
+
+    \
+
+    / Control group
+    .form-control-group
+      %label.form-control-label{ :for => 'form-layout-regular-2' } Password
+      .form-control
+        %input#form-layout-regular-2.form-input-size-xxlarge{ :type => 'password', :placeholder => 'Enter your username…' }
+        %p.form-control-help This is the sample help information about this input field.
+
+    \
+
+    / Control group
+    .form-control-group
+      %label.form-control-label{ :for => 'form-layout-regular-3' } Short bio
+      .form-control
+        %textarea#form-layout-regular-3{ :placeholder => 'Describe yourself in few words…' }
+        %p.form-control-help This is the sample help information about this input field.
+
+    \
+
+    / Control group
+    .form-control-group
+      %label.form-control-label{ :for => 'form-layout-regular-4' } Privacy policy
+      .form-control
+        %input#form-layout-regular-4{ :type => 'checkbox' }
+        %label{ :for => 'form-layout-regular-4' } Yes I agree to the following:
+        .form-control-help
+          %ul
+            %li #{lorem.words(7).capitalize}.
+            %li #{lorem.words(15).capitalize}.
+            %li #{lorem.words(10).capitalize}.
+
+    \
+
+    / Form actions
+    .form-actions
+      %button.btn{ :type => 'submit' } Submit
+      %button.btn{ :type => 'reset' } Reset
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <form action="" method="">
+      <p class="form-description">Some description text for this form.</p>
+
+      <div class="form-control-group">
+        <label class="form-control-label" for="input-id-reference">Sample text input</label>
+
+        <div class="form-control">
+          <input id="input-id" placeholder="Type something…" type="text">
+          <p class="form-control-help">This is the sample help information about this input field.</p>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button class="btn" type="submit">Submit</button>
+        <button class="btn" type="reset">Reset</button>
+      </div>
+    </form>
+-# /Code

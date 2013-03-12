@@ -1,0 +1,28 @@
+.form-description
+  %p This is a sample description text which should tell us about purpose of this form, and may be give us some tips about how to fill it correctly and submit to the server.
+
+/ Control group
+.form-control-group
+  %label.form-control-label Sample text input
+  .form-control
+    %input{ :type => 'text', :placeholder => 'Type something…' }
+    %p.form-control-help This is the sample help information about this input field.
+
+/ Control group
+.form-control-group
+  %label.form-control-label Sample textarea
+  .form-control
+    %textarea{ :placeholder => 'Type something…' }
+    %p.form-control-help This is the sample help information about this input field.
+
+/ Control group
+.form-control-group
+  %label.form-control-label Privacy policy
+  .form-control
+    %input{ :type => 'checkbox' }
+    %label Yes I agree
+
+/ Form actions
+.form-actions
+  %button.btn{ :type => 'submit' } Submit
+  %button.btn{ :type => 'reset' } Reset

@@ -1,0 +1,23 @@
+-if boxed != false
+  -widgetClasses = 'widget widget-boxed widget-' + className
+-else
+  -widgetClasses = 'widget widget-' + className
+
+:preserve
+  <!-- BEGIN - widget #{ className } -->
+%section{ :class => widgetClasses }
+
+  -if title != false
+    /BEGIN - Widget title
+    %h3{ :class => 'widget--header' } #{ title }
+    /END - Widget title
+
+  /BEGIN - Widget content
+  .widget--content
+    - if content
+      #{ content }
+    - else
+      =partial( '/lib/widgets/' + className, :locals => {:count => count} )
+  /END - Widget content
+:preserve
+  <!-- END - widget #{ className } -->

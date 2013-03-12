@@ -1,0 +1,25 @@
+-# Datetime local ------------------------------------------------------------
+%p
+  The input element with a type attribute whose value is "datetime-local" represents a control for setting the element’s value to a string representing a local date and time (with no timezone information).
+  %br
+  %a{ :href => 'http://www.w3.org/TR/html-markup/input.datetime-local.html', :title => 'Input type datetime-local description'} Read more...
+
+-# Example
+= featureExample do
+  .grid-row
+    .grid-span-6.grid-mobile-span-2
+      %label{ :for => 'form-elements-9' } Datetime local <strong>(Normal)</strong>
+      %br
+      %input{ :id => 'form-elements-9', :name => 'form-elements-9', :type => 'datetime-local' }
+
+    .grid-span-6.grid-mobile-span-2
+      %label{ :for => 'form-elements-9-dis' } Datetime local <strong>(Disabled)</strong>
+      %br
+      %input{ :id => 'form-elements-9-dis', :name => 'form-elements-9-dis', :type => 'datetime-local', :disabled => 'disabled' }
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <input id="input-id" name="input-name" type="datetime-local" />
+-# /Code

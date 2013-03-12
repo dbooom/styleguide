@@ -1,0 +1,37 @@
+-# Paging --------------------------------------------------------------------
+%p A paging is another way to navigate between pages. This time user can choose page number from the list.
+
+-# Example
+= featureExample do
+  %nav.pagination
+    .pagination--pages 1 of 3
+
+    .pagination--list
+      .pagination--item.is-active
+        %span 1
+
+      .pagination--item
+        %a{ :href => '#', :title => 'Page 2' } 2
+
+      .pagination--item
+        %a{ :href => '#', :title => 'Page 3' } 3
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <nav class="pagination">
+      <div class="pagination--pages">1 of 3</div>
+      <div class="pagination--list">
+        <div class="pagination--item is-active">
+          <span>1</span>
+        </div>
+        <div class="pagination--item">
+          <a href="#" title="Page 2">2</a>
+        </div>
+        <div class="pagination--item">
+          <a href="#" title="Page 3">3</a>
+        </div>
+      </div>
+    </nav>
+-# /Code

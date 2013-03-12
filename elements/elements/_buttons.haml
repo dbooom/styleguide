@@ -1,0 +1,171 @@
+-# Buttons -------------------------------------------------------------------
+%p
+  Button classes may be applied on <code>button</code> or <code>a</code> elements.
+  %br
+  As a convention, buttons should only be used for actions while hyperlinks are to be used for objects. For instance, <strong>"Download"</strong> should be a button while <strong>"recent activity"</strong> should be a link.
+
+-# Example
+= featureExample do
+  .grid-row
+    -# Regular
+    .grid-span-6.grid-mobile-span-2
+      %p
+        %a.btn.btn-mini{ :href=> '#', :title => 'Button Mini' } Button Mini
+      %p
+        %a.btn.btn-small{ :href=> '#', :title => 'Button Small' } Button Small
+      %p
+        %a.btn{ :href=> '#', :title => 'Button Regular' } Button Regular
+      %p
+        %a.btn.btn-large{ :href=> '#', :title => 'Button Large' } Button Large
+
+      %br
+      %br
+
+    -# Primary
+    .grid-span-6.grid-mobile-span-2
+      %p
+        %a.btn.btn-primary.btn-mini{ :href=> '#', :title => 'Button Mini' } Button Mini
+      %p
+        %a.btn.btn-primary.btn-small{ :href=> '#', :title => 'Button Small' } Button Small
+      %p
+        %a.btn.btn-primary{ :href=> '#', :title => 'Button Primary' } Button Primary
+      %p
+        %a.btn.btn-primary.btn-large{ :href=> '#', :title => 'Button Large' } Button Large
+
+      %br
+      %br
+
+    -# Inversed
+    .grid-span-6.grid-mobile-span-2
+      %p
+        %a.btn.btn-inverse.btn-mini{ :href=> '#', :title => 'Button Mini' } Button Mini
+      %p
+        %a.btn.btn-inverse.btn-small{ :href=> '#', :title => 'Button Small' } Button Small
+      %p
+        %a.btn.btn-inverse{ :href=> '#', :title => 'Button Inversed' } Button Inversed
+      %p
+        %a.btn.btn-inverse.btn-large{ :href=> '#', :title => 'Button Large' } Button Large
+
+      %br
+      %br
+
+    -# Success
+    .grid-span-6.grid-mobile-span-2
+      %p
+        %a.btn.btn-success.btn-mini{ :href=> '#', :title => 'Button Mini' } Button Mini
+      %p
+        %a.btn.btn-success.btn-small{ :href=> '#', :title => 'Button Small' } Button Small
+      %p
+        %a.btn.btn-success{ :href=> '#', :title => 'Button Success' } Button Success
+      %p
+        %a.btn.btn-success.btn-large{ :href=> '#', :title => 'Button Large' } Button Large
+
+      %br
+      %br
+
+    -# Info
+    .grid-span-6.grid-mobile-span-2
+      %p
+        %a.btn.btn-info.btn-mini{ :href=> '#', :title => 'Button Mini' } Button Mini
+      %p
+        %a.btn.btn-info.btn-small{ :href=> '#', :title => 'Button Small' } Button Small
+      %p
+        %a.btn.btn-info{ :href=> '#', :title => 'Button Info' } Button Info
+      %p
+        %a.btn.btn-info.btn-large{ :href=> '#', :title => 'Button Large' } Button Large
+
+      %br
+      %br
+
+    -# Warning
+    .grid-span-6.grid-mobile-span-2
+      %p
+        %a.btn.btn-warning.btn-mini{ :href=> '#', :title => 'Button Mini' } Button Mini
+      %p
+        %a.btn.btn-warning.btn-small{ :href=> '#', :title => 'Button Small' } Button Small
+      %p
+        %a.btn.btn-warning{ :href=> '#', :title => 'Button Warning' } Button Warning
+      %p
+        %a.btn.btn-warning.btn-large{ :href=> '#', :title => 'Button Large' } Button Large
+
+      %br
+      %br
+
+    -# Danger
+    .grid-span-6.grid-mobile-span-2
+      %p
+        %a.btn.btn-danger.btn-mini{ :href=> '#', :title => 'Button Mini' } Button Mini
+      %p
+        %a.btn.btn-danger.btn-small{ :href=> '#', :title => 'Button Small' } Button Small
+      %p
+        %a.btn.btn-danger{ :href=> '#', :title => 'Button Danger' } Button Danger
+      %p
+        %a.btn.btn-danger.btn-large{ :href=> '#', :title => 'Button Large' } Button Large
+
+    -# Disabled
+    .grid-span-6.grid-mobile-span-2
+      %p
+        %a.btn.btn-mini.is-disabled{ :href=> '#', :title => 'Button Mini' } Button Mini
+      %p
+        %a.btn.btn-small.is-disabled{ :href=> '#', :title => 'Button Small' } Button Small
+      %p
+        %a.btn.is-disabled{ :href=> '#', :title => 'Button Disabled' } Button Disabled
+      %p
+        %a.btn.btn-large.is-disabled{ :href=> '#', :title => 'Button Large' } Button Large
+-# /Example
+
+
+-# Code
+= featureCode do
+  :numcode
+    <a class="btn" href="#" title="Button Regular">Button</a>
+    <a class="btn is-disabled" href="#" title="Button Disabled">Disabled</a>
+    <a class="btn btn-inverse" href="#" title="Button Inversed">Inversed</a>
+    <a class="btn btn-primary" href="#" title="Button Primary">Primary</a>
+    <a class="btn btn-success" href="#" title="Button Success">Success</a>
+    <a class="btn btn-info" href="#" title="Button Info">Info</a>
+    <a class="btn btn-warning" href="#" title="Button Warning">Warning</a>
+    <a class="btn btn-danger" href="#" title="Button Danger">Danger</a>
+
+    <a class="btn btn-large" href="#" title="Button Large">Large</a>
+    <a class="btn" href="#" title="Button Regular">Regular</a>
+    <a class="btn btn-small" href="#" title="Button Small">Small</a>
+    <a class="btn btn-mini" href="#" title="Button Mini">Mini</a>
+-# /Code
+
+
+-# Button with icon ----------------------------------------------------------
+%p Just as some other elements, buttons may contain icons. All available icons can be found at #{ link_to('Icons section', '/features/ui-elements.html#styleguide-section-elements-icons') }.
+
+-# Example
+= featureExample do
+  %a.btn.btn-success{ :href=> '#', :title => 'Submit' }
+    %i.icon-ok
+    Submit
+
+  %a.btn.btn-info{ :href=> '#', :title => 'Edit' }
+    %i.icon-cog
+    Edit
+
+  %a.btn.btn-danger{ :href=> '#', :title => 'Cancel' }
+    %i.icon-remove
+    Cancel
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <a class="btn btn-success" href="#" title="Submit">
+      <i class="icon-ok"></i>
+      Submit
+    </a>
+
+    <a class="btn btn-info" href="#" title="Edit">
+      <i class="icon-cog"></i>
+      Edit
+    </a>
+
+    <a class="btn btn-danger" href="#" title="Cancel">
+      <i class="icon-remove"></i>
+      Cancel
+    </a>

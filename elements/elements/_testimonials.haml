@@ -1,0 +1,52 @@
+-# Testimonials --------------------------------------------------------------
+%p Regular testimonial is simply a <code>blockquote</code> within a <code>figure</code> element. The structure of testimonial is pretty simple. There are few classes you have to use to build a testimonial: <code>.testimonial</code> - for "figure" element, <code>.testimonial--content</code> - for a "blockquote" element and <code>.testimonial--source</code> - for "figcaption" element.
+
+-# Example
+= featureExample do
+  %figure.testimonial
+    %img.testimonial--thumbnail{ :src => 'http://pexetothemes.com/demos/evermore_wp/wp-content/uploads/2013/03/business-man-with-a-group2.jpg', :alt => 'Thumbnail image' }
+    %blockquote.testimonial--content
+      %p #{lorem.paragraph}.
+    %figcaption.testimonial--source #{lorem.name}, Company name
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <figure class="testimonial">
+      <blockquote class="testimonial--content">
+        <p>Testimonial content</p>
+      </blockquote>
+      <figcaption class="testimonial--source">Testimonial source</figcaption>
+    </figure>
+-# /Code
+
+-# Testimonials in grid ------------------------------------------------------
+%p Another great idea is to display testimonials in a grid.
+
+-# Example
+= featureExample do
+  .grid-row
+    .grid-span-6
+      %figure.testimonial
+        %blockquote.testimonial--content
+          %p #{lorem.words(20).capitalize}.
+        %figcaption.testimonial--source #{lorem.name}, Company name
+
+    .grid-span-6
+      %figure.testimonial
+        %blockquote.testimonial--content
+          %p #{lorem.words(20).capitalize}.
+        %figcaption.testimonial--source #{lorem.name}, Company name
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    .grid-row
+      .grid-span-6
+        Testimonial code
+
+      .grid-span-6
+        Testimonial code
+-# /Code

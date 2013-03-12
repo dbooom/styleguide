@@ -1,0 +1,59 @@
+-# Video ---------------------------------------------------------------------
+%p The <code>video</code> tag specifies video, such as a movie clip or other video streams.
+
+-# Example
+= featureExample do
+  %video{ :preload => 'none', :controls => 'controls', :poster => 'http://www.jplayer.org/video/poster/Big_Buck_Bunny_Trailer_480x270.png' }
+    :preserve
+      <source src="http://www.jplayer.org/video/m4v/Big_Buck_Bunny_Trailer_480x270_h264aac.m4v" type="video/mp4">
+      <source src="http://www.jplayer.org/video/webm/Big_Buck_Bunny_Trailer.webm" type="video/webm">
+      <source src="http://www.jplayer.org/video/ogv/Big_Buck_Bunny_Trailer_480x270.ogv" type="video/ogg">
+      Your browser does not support the video tag.
+-# /Example
+
+
+-# Code
+= featureCode do
+  :numcode
+    <video controls="controls" poster="poster-link.jpg" preload="none">
+      <source src="clip-link.mp4" type="video/mp4">
+      <source src="clip-link.webm" type="video/webm">
+      <source src="clip-link.ogv" type="video/ogg">
+      Your browser does not support the video tag.
+    </video>
+-# /Code
+
+
+-# Video Embeded -------------------------------------------------------------
+%p Here is the embeded video examples from popular video-hostings like Youtube and Vimeo. Make sure all your embeded videos are wrapped into <code>.video-responsive</code> container, this will fit proportion of height and width when screen is resized.
+
+-# Example
+= featureExample do
+  .video-responsive
+    %iframe{ :src => 'http://www.youtube.com/embed/DaShguzgBAg' }
+-# /Example
+
+
+-# Code
+= featureCode do
+  :numcode
+    <div class="video-responsive">
+      <iframe src="http://www.youtube.com/embed/--embed-code--"></iframe>
+    </div>
+-# /Code
+
+
+-# Example
+= featureExample do
+  .video-responsive
+    %iframe{ :src => 'http://player.vimeo.com/video/38936422' }
+-# /Example
+
+
+-# Code
+= featureCode do
+  :numcode
+    <div class="video-responsive">
+      <iframe src="http://player.vimeo.com/video/--embed-code--"></iframe>
+    </div>
+-# /Code

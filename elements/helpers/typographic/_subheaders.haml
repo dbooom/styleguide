@@ -1,0 +1,37 @@
+-# Sub headers ---------------------------------------------------------------
+%p
+  The sub-heading is a secondary heading. It may contains information additional but relevant to the main header.
+  %br
+  Usually it's good idea to use sub-header in pair with primary header which level is sub-header + 1.
+  %br
+  For example: if <code>h1</code> is in use as primary header, then <code>h2</code> should be applied to the sub-header.
+
+-# Example
+= featureExample do
+  %h1 This is level one header
+  %h2.sub-header Hi, I'm subheader of level two example, look what I'm able to do.
+  %p #{lorem.words(30).capitalize}.
+
+  %h2 This is level two header
+  %h3.sub-header Hi, I'm subheader of level three example, look what I'm able to do.
+  %p #{lorem.words(30).capitalize}.
+
+  %h3 This is level three header
+  %h4.sub-header Hi, I'm subheader of level four example, look what I'm able to do.
+  %p #{lorem.words(30).capitalize}.
+
+  %h4 This is level four header
+  %h5.sub-header Hi, I'm subheader of level five example, look what I'm able to do.
+  %p #{lorem.words(30).capitalize}.
+
+  %h5 This is level five header
+  %h6.sub-header Hi, I'm subheader of level six example, look what I'm able to do.
+  %p #{lorem.words(30).capitalize}.
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <h2>Header</h2>
+    <h3 class="sub-header">Sub header</h3>
+-# /Code

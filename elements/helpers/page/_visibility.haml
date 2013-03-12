@@ -1,0 +1,125 @@
+-# Visibility helpers --------------------------------------------------------
+%p Visibility classes control when selected elements would be hidden or shown, based on screen size and other device specific features (touch support etc.). Here is working example of these classes.
+
+-# Example
+= featureExample do
+  %strong Basic visibility classes (may be useful to apply with JS)
+
+  %table.table-background.table-bordered.responsive
+    %thead
+      %tr
+        %th Description
+        %th Class
+
+    %tbody
+      %tr
+        %td This element will be always shown
+        %td <code>.show</code>
+
+      %tr
+        %td This element will be always hidden
+        %td <code>.hide</code>
+
+
+  %strong Classes based on screen size
+  %table.table-background.table-bordered.responsive
+    %thead
+      %tr
+        %th Description
+        %th Class
+        %th Current status
+
+    %tbody
+      %tr
+        %td Will be shown on wide screens
+        %td <code>.show-for-wide</code>
+        %td.visibility-status <span class="visibility-show-wide">Status:</span>
+
+      %tr
+        %td Will be hidden on wide screens
+        %td <code>.hide-for-wide</code>
+        %td.visibility-status <span class="visibility-hide-wide">Status:</span>
+
+      %tr
+        %td Will be shown on medium screens
+        %td <code>.show-for-medium</code>
+        %td.visibility-status <span class="visibility-show-medium">Status:</span>
+
+      %tr
+        %td Will be hidden on medium screens
+        %td <code>.hide-for-medium</code>
+        %td.visibility-status <span class="visibility-hide-medium">Status:</span>
+
+      %tr
+        %td Will be shown on small screens
+        %td <code>.show-for-small</code>
+        %td.visibility-status <span class="visibility-show-small">Status:</span>
+
+      %tr
+        %td Will be hidden on small screens
+        %td <code>.hide-for-small</code>
+        %td.visibility-status <span class="visibility-hide-small">Status:</span>
+
+      %tr
+        %td Will be shown on extra small screens
+        %td <code>.show-for-mini</code>
+        %td.visibility-status <span class="visibility-show-x-small">Status:</span>
+
+      %tr
+        %td Will be hidden on extra small screens
+        %td <code>.hide-for-mini</code>
+        %td.visibility-status <span class="visibility-hide-x-small">Status:</span>
+
+      %tr
+        %td Will be shown on retina screens
+        %td <code>.show-for-retina</code>
+        %td.visibility-status <span class="visibility-show-retina">Status:</span>
+
+      %tr
+        %td Will be hidden on retina screens
+        %td <code>.hide-for-retina</code>
+        %td.visibility-status <span class="visibility-hide-retina">Status:</span>
+
+
+  %strong Classes based on device features
+  %table.table-background.table-bordered.responsive
+    %thead
+      %tr
+        %th Description
+        %th Class
+        %th Current status
+
+    %tbody
+      %tr
+        %td Will be shown on touch screen devices
+        %td <code>.show-for-touch</code>
+        %td.visibility-status <span class="visibility-show-touch">Status:</span>
+
+      %tr
+        %td Will be hidden on touch screen devices
+        %td <code>.hide-for-touch</code>
+        %td.visibility-status <span class="visibility-hide-touch">Status:</span>
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <div class="show">Show</div>
+    <div class="hide">Hide</div>
+
+    <div class="show-for-wide">Wide screens</div>
+    <div class="show-for-medium">Medium screens</div>
+    <div class="show-for-small">Small screens</div>
+    <div class="show-for-mini">Extra small screens</div>
+    <div class="show-for-retina">Retina screens</div>
+
+    <div class="hide-for-wide">Wide screens</div>
+    <div class="hide-for-medium">Medium screens</div>
+    <div class="hide-form-small">Small screens</div>
+    <div class="hide-for-mini">Extra small screens</div>
+    <div class="hide-for-retina">Retina screens</div>
+
+
+    <div class="show-for-touch">Touch screen devices</div>
+    <div class="hide-for-touch">Touch screen devices</div>
+-# /Code

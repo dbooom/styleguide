@@ -1,0 +1,27 @@
+-# Pager ---------------------------------------------------------------------
+%p A pager is a convenient navigation between pages. Usually, pager allows user to move on Previous/Next page.
+
+-# Example
+= featureExample do
+  %ul.pager
+    %li.pager--item.pager--previous
+      %a{ :href => '#', :title => 'Previous Page' }
+        Previous
+
+    %li.pager--item.pager--next
+      %a{ :href => '#', :title => 'Next Page' }
+        Next
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <ul class="pager">
+      <li class="pager--item pager--previous">
+        <a href="#" title="Previous Page">Previous</a>
+      </li>
+      <li class="pager--item pager--next">
+        <a href="#" title="Next Page">Next</a>
+      </li>
+    </ul>
+-# /Code

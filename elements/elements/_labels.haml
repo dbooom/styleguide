@@ -1,0 +1,40 @@
+-# Labels --------------------------------------------------------------------
+%p Want to mark or label some of the content? Easy, just use one of the available label styles. It's really easy and useful.
+
+-# Example
+= featureExample do
+  %p
+    %span.label Default Label
+    #{ lorem.words(10) }.
+
+  %p
+    %span.label.label-inverse Inverse
+    #{ lorem.words(10) }.
+
+  %p
+    %span.label.label-success Success
+    #{ lorem.words(10) }.
+
+  %p
+    %span.label.label-info Default Info
+    #{ lorem.words(10) }.
+
+  %p
+    %span.label.label-warning Default Warning
+    #{ lorem.words(10) }.
+
+  %p
+    %span.label.label-error Default Error
+    #{ lorem.words(10) }.
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <span class="label">Default</span>
+    <span class="label label-inverse">Inverted</span>
+    <span class="label label-success">Success</span>
+    <span class="label label-info">Information</span>
+    <span class="label label-warning">Warning</span>
+    <span class="label label-error">Error</span>
+-# /Code

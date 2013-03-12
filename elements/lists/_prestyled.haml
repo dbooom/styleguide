@@ -1,0 +1,20 @@
+-# Prestyled list ------------------------------------------------------------
+%p Additional to default list style type of <code>ul</code> items, user can choose custom bullet icons instead. First step is to apply <code>.icons</code> class to the <code>ul</code> element, then in order to have custom icons as bullets, you should add one of the available icons classes to them, for example <code>.icon-plus</code>. All available icons may be found at the <a href="#styleguide-section-elements-icons" title="Proceed to the Icons section">Icons section</a>
+
+-# Example
+= featureExample do
+  %ul.icons
+    %li <i class="icon-cog"></i> Default list item
+    %li <i class="icon-cog"></i> Default list item
+    %li <i class="icon-gift"></i> List item with "Gift" icon
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <ul class="icons">
+      <li class="icon-cog">Default list item</li>
+      <li class="icon-cog">Default list item</li>
+      <li class="icon-gift">List item with "Gift" icon</li>
+    </ul>
+-# /Code

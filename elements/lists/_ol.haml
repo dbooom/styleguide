@@ -1,0 +1,30 @@
+-# Ordered list --------------------------------------------------------------
+%p The <code>ol</code> element denotes an ordered list, and various numbering schemes are available through the CSS (including 1,2,3… a,b,c… i,ii,iii… and so on). Each item requires a surrounding <code>&lt;li&gt;</code> and <code>&lt;/li&gt;</code> tag, to denote individual items within the list (as you may have guessed, <code>li</code> stands for list item).
+
+-# Example
+= featureExample do
+  %ol
+    %li This is an ordered list.
+    %li
+      This is the second item, which contains a sub list
+      %ol
+        %li This is the sub list, which is also ordered.
+        %li It has two items.
+    %li This is the final item on this list.
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <ol>
+      <li>This is an ordered list.</li>
+      <li>
+        This is the second item, which contains a sub list
+        <ol>
+          <li>This is the sub list, which is also ordered.</li>
+          <li>It has two items.</li>
+        </ol>
+      </li>
+      <li>This is the final item on this list.</li>
+    </ol>
+-# /Code

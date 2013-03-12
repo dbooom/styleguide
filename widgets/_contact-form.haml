@@ -1,0 +1,22 @@
+%form{ :action => '/' }
+  / Control group
+  .form-control-group
+    %label.form-control-label{ :for => 'widget-contact-form-input-1' } Name *
+    .form-control
+      %input.form-input-size-wide{ :id => 'widget-contact-form-input-1', :type => 'text', :placeholder => 'Enter your name…' }
+
+  / Control group
+  .form-control-group
+    %label.form-control-label{ :for => 'widget-contact-form-input-2' } Email *
+    .form-control
+      %input.form-input-size-wide{ :id => 'widget-contact-form-input-2', :type => 'email', :placeholder => 'Enter email address…' }
+
+  / Control group
+  .form-control-group
+    %label.form-control-label{ :for => 'widget-contact-form-input-4' } Message *
+    .form-control
+      %textarea{ :id => 'widget-contact-form-input-4', :placeholder => 'Message text…' }
+
+  / Form actions
+  .form-actions
+    %button.btn{ :type => 'submit' } Submit

@@ -1,0 +1,46 @@
+-# Mobile grid ---------------------------------------------------------------
+%p Simplified grid also available for mobile devices, as a possibility to organize content in some way.
+%p There are only 4 different column types available for mobile grid instead of 12 for desktop version.
+%p Best practice for using mobile grid, is to combine its classes with desktop grid classes, but it is delicate operation because not every grid spans are replaceable with mobile versions.
+%p The following spans may be safely replaced with mobile grid classes:
+%ul
+  %li Desktop Span 3 <code>.grid-span-3</code> = Mobile Span 1 <code>.grid-mobile-span-1</code>
+  %li Desktop Span 6 <code>.grid-span-6</code> = Mobile Span 2 <code>.grid-mobile-span-2</code>
+  %li Desktop Span 9 <code>.grid-span-9</code> = Mobile Span 3 <code>.grid-mobile-span-3</code>
+  %li Desktop Span 12 <code>.grid-span-12</code> = Mobile Span 4 <code>.grid-mobile-span-4</code>
+
+-# Example
+= featureExample do
+  .grid-row
+    .grid-mobile-span-1.grid-span-3
+      %span.show-grid Mobile 1 with Desktop 3
+    .grid-mobile-span-1.grid-span-3
+      %span.show-grid Mobile 1 with Desktop 3
+    .grid-mobile-span-1.grid-span-3
+      %span.show-grid Mobile 1 with Desktop 3
+    .grid-mobile-span-1.grid-span-3
+      %span.show-grid Mobile 1 with Desktop 3
+
+  .grid-row
+    .grid-mobile-span-2.grid-span-6
+      %span.show-grid Mobile 2 with Desktop 6
+    .grid-mobile-span-2.grid-span-6
+      %span.show-grid Mobile 2 with Desktop 6
+
+  .grid-row
+    .grid-mobile-span-3.grid-span-9
+      %span.show-grid Mobile 3 with Desktop 9
+    .grid-mobile-span-1.grid-span-3
+      %span.show-grid Mobile 1 with Desktop 3
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <div class="grid-row">
+      <div class="grid-mobile-span-1 grid-span-3">Mobile 1 with Desktop 3</div>
+      <div class="grid-mobile-span-1 grid-span-3">Mobile 1 with Desktop 3</div>
+      <div class="grid-mobile-span-1 grid-span-3">Mobile 1 with Desktop 3</div>
+      <div class="grid-mobile-span-1 grid-span-3">Mobile 1 with Desktop 3</div>
+    </div>
+-# /Code

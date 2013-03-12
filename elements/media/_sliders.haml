@@ -1,0 +1,79 @@
+-# Slider controls navigation ------------------------------------------------
+%p User can choose one of the several available sliders variations:
+%ul
+  %li Slider with controls navigation - <code>.slider-content-control-nav</code>
+  %li Slider with directional navigation - <code>.slider-content-direction-nav</code>
+  %li Carousel type slider - <code>.slider-content-carousel</code>
+
+%p Each slide may contain arbitrary content, it may be an image, video, testimonial etc.
+%p The structure of any slider type is the same.
+
+-# Example
+= featureExample do
+  .slider-content.control-nav
+    %ul.slides
+      %li
+        =box do
+          %p #{ lorem.paragraph }.
+      %li
+        %img{ :src => 'http://lorempixum.com/680/500/abstract/?r', :alt => 'Example image' }
+      %li
+        =box do
+          %p #{ lorem.paragraph }.
+      %li
+        %img{ :src => 'http://lorempixum.com/680/400/abstract/?r', :alt => 'Example image' }
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <div class="slider-content control-nav">
+      <ul class="slides">
+        <li>Slide content</li>
+        <li>Slide content</li>
+        <li>Slide content</li>
+      </ul>
+    </div>
+-# /Code
+
+-# Slider directional navigation ---------------------------------------------
+
+
+-# Example
+= featureExample do
+  .slider-content.direction-nav
+    %ul.slides
+      %li
+        %img{ :src => 'http://lorempixum.com/680/400/abstract/?r', :alt => 'Example image' }
+      %li
+        %img{ :src => 'http://lorempixum.com/680/500/abstract/?r', :alt => 'Example image' }
+      %li
+        %img{ :src => 'http://lorempixum.com/680/400/abstract/?r', :alt => 'Example image' }
+      %li
+        %img{ :src => 'http://lorempixum.com/680/400/abstract/?r', :alt => 'Example image' }
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <div class="slider-content direction-nav">
+      <ul class="slides">
+        <li>Slide content</li>
+        <li>Slide content</li>
+        <li>Slide content</li>
+      </ul>
+    </div>
+-# /Code
+
+-# Slider carousel -----------------------------------------------------------
+
+-# Example
+= featureExample do
+  %img{ :src => 'http://lorempixum.com/680/400/abstract/?r', :alt => 'Example image' }
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <img src="http://lorempixum.com/680/400/abstract/?r" alt="Example image" />
+-# /Code

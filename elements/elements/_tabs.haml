@@ -1,0 +1,76 @@
+-# Tabs regular --------------------------------------------------------------
+%p Tabs is a convenient way to organize content into a panels. User may view content from different panels by clicking on available tabs.
+
+-# Example
+= featureExample do
+  %div.tabs
+    %ul.tabs--triggers
+      %li.tabs--trigger.is-active
+        %a{ :href => '#tab-1' } Tab One
+      %li.tabs--trigger
+        %a{ :href => '#tab-2' } Tab Two
+      %li.tabs--trigger
+        %a{ :href => '#tab-3' } Tab Tree
+
+    #tab-1.tabs--content
+      %p #{lorem.paragraph}
+
+    #tab-2.tabs--content
+      %p #{lorem.paragraph}
+
+    #tab-3.tabs--content
+      %p #{lorem.paragraph}
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <div class="tabs">
+      <ul class="tabs--triggers">
+        <li class="tabs--trigger is-active"><a href="#tab-1">Tab One</a></li>
+        <li class="tabs--trigger"><a href="#tab-2">Tab Two</a></li>
+      </ul>
+
+      <div class="tabs--content" id="tab-1">Tab content</div>
+      <div class="tabs--content" id="tab-2">Tab content</div>
+    </div>
+-# /Code
+
+
+-# Tabs horisontal --------------------------------------------------------------
+%p Tabs with different layout styles may be created. Current example shows horizontal orientation of tabs.
+
+-# Example
+= featureExample do
+  %div.tabs.tabs-horizontal
+    %ul.tabs--triggers
+      %li.tabs--trigger
+        %a{ :href => '#tab-4' } Tab One
+      %li.tabs--trigger
+        %a{ :href => '#tab-5' } Tab Two
+      %li.tabs--trigger
+        %a{ :href => '#tab-6' } Tab Tree
+
+    #tab-4.tabs--content
+      %p #{lorem.paragraph}
+
+    #tab-5.tabs--content
+      %p #{lorem.paragraph}
+
+    #tab-6.tabs--content
+      %p #{lorem.paragraph}
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <div class="tabs tabs-horizontal">
+      <ul class="tabs--triggers">
+        <li class="tabs--trigger is-active"><a href="#tab-1">Tab One</a></li>
+        <li class="tabs--trigger"><a href="#tab-2">Tab Two</a></li>
+      </ul>
+
+      <div class="tabs--content" id="tab-1">Tab content</div>
+      <div class="tabs--content" id="tab-2">Tab content</div>
+    </div>
+-# /Code

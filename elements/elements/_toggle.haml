@@ -1,0 +1,17 @@
+-# Toggle regular ------------------------------------------------------------
+%p Often <code>toggles</code> are used as "Question/Answer" lists etc. Title is visible, while content of the <code>toggle</code> is hidden by default. Content may be displayed by clicking on the title.
+
+-# Example
+= featureExample do
+  =toggle do
+    #{ lorem.words(20).capitalize }.
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <div class="toggle">
+      <h4 class="toggle--title">Title</h4>
+      <div class="toggle--content">Content</div>
+    </div>
+-# /Code

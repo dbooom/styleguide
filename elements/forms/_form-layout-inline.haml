@@ -1,0 +1,122 @@
+-# Inline form elements ------------------------------------------------------
+%p Another structuring option for your forms is to place controls next to each other. In the following example you may see practical use case for such structure.
+%p The main idea here is to wrap several input fields in special divs with the <code>.form-element-inline</code> class within single <code>.form-control</code> element.
+
+
+-# Example
+= featureExample do
+  %form{ :action => '/' }
+
+    / Control group
+    .form-control-group
+      %label.form-control-label{ :for => 'inline-form-input-1' } Enter your name
+
+      \
+
+      .form-control
+        .form-element-inline
+          %input{ :id => 'inline-form-input-1', :type => 'text', :placeholder => 'First name…', :title => 'Test error', :required => 'required' }
+          %p.form-control-help First name help text.
+
+        \
+
+        .form-element-inline
+          %input{ :id => 'inline-form-input-2', :type => 'text', :placeholder => 'Last name…' }
+          %p.form-control-help Last name help text.
+
+    \
+
+    / Control group
+    .form-control-group
+      %label.form-control-label{ :for => 'inline-form-input-2' } Short bio
+      .form-control
+        %textarea{ :id => 'inline-form-input-3', :placeholder => 'Type something…' }
+        %p.form-control-help This is the sample help information about this input field.
+
+    \
+
+    / Control group
+    .form-actions
+      %button.btn{ :type => 'submit' } Submit
+      %button.btn{ :type => 'reset' } Reset
+-# /Example
+
+
+-# Code
+= featureCode do
+  :numcode
+    <form action="/">
+      <div class="form-control-group">
+        <label class="form-control-label" for="input-id-reference">Enter your name</label>
+
+        <div class="form-control">
+          <div class="form-element-inline">
+            <input id="input-id" placeholder="First name…" type="text">
+            <p>Help text</p>
+          </div>
+
+          <div class="form-element-inline">
+            <input id="input-id" placeholder="Last name…" type="text">
+            <p>Help text</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button class="btn btn-primary" type="submit">Submit</button>
+        <button class="btn" type="reset">Reset</button>
+      </div>
+    </form>
+-# /Code
+
+
+%p Similarly, you can build completely inline forms, for example login form for your site. In this simplified example you can remove <code>.form-control-group</code>, <code>.form-control-label</code>, <code>.form-control</code>, <code>.form-actions</code> markup elements since they have no any mandatory roles here. All you need to construct this kind of form, is to wrap every input element with <code>.form-element-inline</code> holder.
+
+-# Example
+= featureExample do
+
+  %form{ :action => '/' }
+    .form-element-inline
+      %input.form-input-size-medium{ :id => 'inline-form-input-4', :type => 'email', :placeholder => 'Email address' }
+
+    \
+
+    .form-element-inline
+      %input.form-input-size-medium{ :id => 'inline-form-input-5', :type => 'password', :placeholder => 'Password' }
+
+    \
+
+    .form-element-inline
+      %label{ :for => 'inline-form-input-6' }
+        %input{ :id => 'inline-form-input-6', :type => 'checkbox' }
+        Remember Me
+
+    \
+
+    .form-element-inline
+      %button.btn{ :type => 'submit' } Login
+-# /Example
+
+
+-# Code
+= featureCode do
+  :numcode
+    <form action="/">
+      <div class="form-element-inline">
+        <input id="input-id" placeholder="Email address" type="email">
+      </div>
+
+      <div class="form-element-inline">
+        <input id="input-id" placeholder="Password" type="password">
+      </div>
+
+      <div class="form-element-inline">
+        <input id="iinput-id" type="checkbox">
+        <label for="input-id-reference">Remember Me</label>
+      </div>
+
+      <div class="form-element-inline">
+        <button class="btn" type="submit">Login</button>
+      </div>
+    </form>
+-# /Code

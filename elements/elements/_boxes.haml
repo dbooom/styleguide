@@ -1,0 +1,54 @@
+-# Box regular ---------------------------------------------------------------
+%p Content boxes are really helpful UI elements. Boxes may contain side notes or other accompanying information. There are two types of content boxes available.
+%p The first example, is the default box type.
+
+-# Example
+= featureExample do
+  =box do
+    %p #{ lorem.paragraph }.
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <div class="content-box">
+      <p>Content...</p>
+    </div>
+-# /Code
+
+
+-# Box alternative -----------------------------------------------------------
+%p Here is another variation of the <code>content box</code>.
+
+-# Example
+= featureExample do
+  =box( false, 'content-box-alt' ) do
+    %p #{ lorem.paragraph }.
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <div class="content-box-alt">
+      <p>Content...</p>
+    </div>
+-# /Code
+
+
+-# Box with title ------------------------------------------------------------
+%p Also, each content box may have optional title. The <code>title</code> may be one of the available heading tags <code>h1-h6</code> with additional <code>.content-box--title</code> class.
+
+-# Example
+= featureExample do
+  =box( 'Hi, I\'m sample title of this box', 'content-box' ) do
+    %p #{ lorem.paragraph }.
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <div class="content-box">
+      <h4 class="content-box--title">Title</h4>
+      <p>Content...</p>
+    </div>
+-# /Code

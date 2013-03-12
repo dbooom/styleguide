@@ -1,0 +1,31 @@
+-# Grid offsets --------------------------------------------------------------
+%p It is possible to add offset to the desired cells.
+
+-# Example
+= featureExample do
+
+  .grid-row
+    .grid-span-4
+      %span.show-grid Span 4
+    .grid-span-4.grid-offset-4
+      %span.show-grid Span 4 offset 4
+
+  .grid-row
+    .grid-span-3.grid-offset-3
+      %span.show-grid Span 3 offset 3
+    .grid-span-3.grid-offset-3
+      %span.show-grid Span 3 offset 3
+
+  .grid-row
+    .grid-span-8.grid-offset-4
+      %span.show-grid Span 8 offset 4
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <div class="grid-row">
+      <div class="grid-span-3 grid-offset-3">Cell content...</div>
+      <div class="grid-span-3 grid-offset-3">Cell content...</div>
+    </div>
+-# /Code

@@ -1,0 +1,21 @@
+-# Button --------------------------------------------------------------------
+%p
+  The input element with a type attribute whose value is "button" represents a button with no additional semantics.
+  %br
+  %a{ :href => 'http://www.w3.org/TR/html-markup/input.button.html', :title => 'Input type button description'} Read more...
+
+-# Example
+= featureExample do
+  .grid-row
+    .grid-span-6.grid-mobile-span-2
+      %input.btn{ :type => 'button', :value => 'Button (Normal)' }
+
+    .grid-span-6.grid-mobile-span-2
+      %input.btn{ :type => 'button', :value => 'Button (Disabled)', :disabled => 'disabled' }
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <input class="btn" type="button" value="Button" />
+-# /Code

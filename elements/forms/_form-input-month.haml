@@ -1,0 +1,25 @@
+-# Month ---------------------------------------------------------------------
+%p
+  The input element with a type attribute whose value is "month" represents a control for setting the element’s value to a string representing a month.
+  %br
+  %a{ :href => 'http://www.w3.org/TR/html-markup/input.month.html', :title => 'Input type month description'} Read more...
+
+-# Example
+= featureExample do
+  .grid-row
+    .grid-span-6.grid-mobile-span-2
+      %label{ :for => 'form-elements-14' } Month <strong>(Normal)</strong>
+      %br
+      %input{ :id => 'form-elements-14', :name => 'form-elements-14', :type => 'month' }
+
+    .grid-span-6.grid-mobile-span-2
+      %label{ :for => 'form-elements-14-dis' } Month <strong>(Disabled)</strong>
+      %br
+      %input{ :id => 'form-elements-14-dis', :name => 'form-elements-14-dis', :type => 'month', :disabled => 'disabled' }
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <input id="input-id" name="input-name" type="month" />
+-# /Code

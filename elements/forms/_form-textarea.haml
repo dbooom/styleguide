@@ -1,0 +1,23 @@
+-# Textarea ------------------------------------------------------------------
+%p
+  The textarea element represents a multi-line plain-text edit control for the element’s raw value.
+  %br
+  %a{ :href => 'http://www.w3.org/TR/html-markup/textarea.html#textarea', :title => 'Textarea description'} Read more...
+
+-# Example
+= featureExample do
+  .grid-row
+    .grid-span-6.grid-mobile-span-2
+      %label{ :for => 'form-elements-5' } Textarea <strong>(Normal)</strong>
+      %textarea{ :id => 'form-elements-5', :name => 'form-elements-5', :rows => '5', :placeholder => 'This is an example of HTML5 placeholder text' }
+
+    .grid-span-6.grid-mobile-span-2
+      %label{ :for => 'form-elements-5-dis' } Textarea <strong>(Disabled)</strong>
+      %textarea{ :id => 'form-elements-5-dis', :name => 'form-elements-5-dis', :rows => '5', :placeholder => 'This is an example of HTML5 placeholder text', :disabled => 'disabled' }
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <textarea id="input-id" name="input-name" placeholder="Placeholder text" rows="5"></textarea>
+-# /Code

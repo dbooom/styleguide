@@ -1,0 +1,21 @@
+-# Reset ---------------------------------------------------------------------
+%p
+  The input element with a type attribute whose value is "reset" represents a button for resetting a form.
+  %br
+  %a{ :href => 'http://www.w3.org/TR/html-markup/input.reset.html', :title => 'Input type reset description'} Read more...
+
+-# Example
+= featureExample do
+  .grid-row
+    .grid-span-6.grid-mobile-span-2
+      %input.btn{ :type => 'reset', :value => 'Reset (Normal)' }
+
+    .grid-span-6.grid-mobile-span-2
+      %input.btn{ :type => 'reset', :value => 'Reset (Disabled)', :disabled => 'disabled' }
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <input class="btn" type="reset" value="Reset" />
+-# /Code

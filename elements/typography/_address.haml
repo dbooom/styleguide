@@ -1,0 +1,25 @@
+-# Address -------------------------------------------------------------------
+%p The <code>address</code> tag defines the contact information for the author or owner of a document. This way, the reader is able to contact the document's owner. The <code>address</code> element is usually added to the header or footer of a webpage.
+
+-# Example
+= featureExample do
+  %address
+    John Doe
+    %br
+    %a{ :href => 'mailto:us@example.org' } Email me
+    %br
+    Address: Box 564, Disneyland
+    %br
+    Phone: +12 34 56 78
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <address>
+      John Doe<br />
+      <a href="mailto:us@example.org">Email me</a><br />
+      Address: Box 564, Disneyland<br />
+      Phone: +12 34 56 78
+    </address>
+-# /Code

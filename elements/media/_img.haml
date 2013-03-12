@@ -1,0 +1,32 @@
+-# Image regular -------------------------------------------------------------
+%p The <code>img</code> tag defines an image in an HTML page. The <code>img</code> tag has two required attributes: src and alt.
+%p <strong>Note:</strong> Images are not technically inserted into an HTML page, images are linked to HTML pages. The <code>img</code> tag creates a holding space for the referenced image.
+
+-# Example
+= featureExample do
+  %img{ :src => 'http://lorempixum.com/680/400/abstract/?r', :alt => 'Example image' }
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <img src="http://lorempixum.com/680/400/abstract/?r" alt="Example image" />
+-# /Code
+
+
+-# Image in frame ------------------------------------------------------------
+%p Image can be placed inside frame, this can add some deph to it.
+
+-# Example
+= featureExample do
+  .image-frame
+    %img{ :src => 'http://lorempixum.com/680/400/abstract/?r', :alt => 'Example image' }
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <div class="image-frame">
+      <img src="http://lorempixum.com/680/400/abstract/?r" alt="Example image" />
+    </div>
+-# /Code

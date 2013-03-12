@@ -1,0 +1,4 @@
+%ul
+  - (1..count).each do
+    %li.widget-tags--item
+      %a{ :href => '#' } #{ lorem.words(rand(1..2)).capitalize }

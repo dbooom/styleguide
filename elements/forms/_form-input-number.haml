@@ -1,0 +1,25 @@
+-# Number --------------------------------------------------------------------
+%p
+  The input element with a type attribute whose value is "number" represents a precise control for setting the element’s value to a string representing a number.
+  %br
+  %a{ :href => 'http://www.w3.org/TR/html-markup/input.number.html', :title => 'Input type number description'} Read more...
+
+-# Example
+= featureExample do
+  .grid-row
+    .grid-span-6.grid-mobile-span-2
+      %label{ :for => 'form-elements-15' } Number <strong>(Normal)</strong>
+      %br
+      %input{ :id => 'form-elements-15', :name => 'form-elements-15', :type => 'number', :min => '0', :max => '999', :step => '1' }
+
+    .grid-span-6.grid-mobile-span-2
+      %label{ :for => 'form-elements-15-dis' } Number <strong>(Disabled)</strong>
+      %br
+      %input{ :id => 'form-elements-15-dis', :name => 'form-elements-15-dis', :type => 'number', :min => '0', :max => '999', :step => '1', :disabled => 'disabled' }
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <input id="input-id" max="999" min="0" name="input-name" step="1" type="number" />
+-# /Code

@@ -1,0 +1,12 @@
+%ul.widget-gallery--list
+  - (1..12).each do |i|
+    /BEGIN - Gallery item
+    %li.widget-gallery--item
+      %a.widget-gallery--thumbnail{ :href => '#', :title => 'Gallery item thumbnail' }
+        %img{ :src => with_assets ? (asset_path :images, 'demo-content/widgets/gallery/' + i.to_s + '.png') : lorem.image('250x250'), :alt => 'Gallery item thumbnail image' }
+
+        %span.widget-gallery--overlay
+          %i.icon-circle-blank
+    /END - Gallery item
+
+    \

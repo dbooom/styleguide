@@ -1,0 +1,76 @@
+-# Accordion regular ---------------------------------------------------------
+%p Accordion element is in many ways similar to tabs. The main difference between those two UI elements, is the way in which panels are shown and hidden.
+
+-# Example
+= featureExample do
+  .accordion
+    .accordion--section
+      %a.accordion--trigger{ :href => '#' } Accordion tab
+      .accordion--content
+        %p #{lorem.paragraph}
+
+    .accordion--section
+      %a.accordion--trigger{ :href => '#' } Accordion tab
+      .accordion--content
+        %p #{lorem.paragraph}
+
+    .accordion--section
+      %a.accordion--trigger{ :href => '#' } Accordion tab
+      .accordion--content
+        %p #{lorem.paragraph}
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <div class="accordion">
+      <a class="accordion--trigger" href="#">Accordion tab</a>
+      <div class="accordion--content">
+        Content...
+      </div>
+
+      <a class="accordion--trigger" href="#">Accordion tab</a>
+      <div class="accordion--content">
+        Content...
+      </div>
+    </div>
+-# /Code
+
+
+-# Accordion with active panel -----------------------------------------------
+%p It is possible to activate one panel by default. To add this ability, one of the available accordion triggers must have <code>.is-active</code> class.
+
+-# Example
+= featureExample do
+  .accordion
+    .accordion--section.is-active
+      %a.accordion--trigger{ :href => '#' } Active by default tab
+      .accordion--content
+        %p #{lorem.paragraph}
+
+    .accordion--section
+      %a.accordion--trigger{ :href => '#' } Accordion tab
+      .accordion--content
+        %p #{lorem.paragraph}
+
+    .accordion--section
+      %a.accordion--trigger{ :href => '#' } Accordion tab
+      .accordion--content
+        %p #{lorem.paragraph}
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <div class="accordion is-active">
+      <a class="accordion--trigger" href="#">Accordion tab</a>
+      <div class="accordion--content">
+        Content...
+      </div>
+
+      <a class="accordion--trigger" href="#">Accordion tab</a>
+      <div class="accordion--content">
+        Content...
+      </div>
+    </div>
+-# /Code

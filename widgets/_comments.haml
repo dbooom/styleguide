@@ -1,0 +1,9 @@
+%ul.widget-comments--list
+  - (1..5).each do |i|
+    - comment = lorem.words(6).capitalize + '...'
+    - name = lorem.name
+    %li.widget-comments--item
+      %a.widget-comments--thumb{ :href => '#', :title => 'User\'s avatar' }
+        %img{ :src => with_assets ?  (asset_path :images, 'demo-content/widgets/user-avatars/' + i.to_s + '.png') : lorem.image('60x60'), :alt => 'Avatar Image' }
+      %a.widget-comments--comment{ :href => '#', :title => comment } #{ comment }
+      %a.widget-comments--author{ :href => '#', :title => 'Author: ' + name } #{ lorem.name }

@@ -1,0 +1,59 @@
+-# Code regular --------------------------------------------------------------
+%p The <code>code</code> element is used to represent fragments of computer code. Useful for technology-oriented sites, not so useful otherwise.
+
+-# Example
+= featureExample do
+  %p When you call the <code>activate()</code> method on the <code>robotSnowman</code> object, the eyes glow.
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    When you call the <code>activate()</code> method on the <code>robotSnowman</code> object, the eyes glow.
+-# /Code
+
+
+-# Code in pre ---------------------------------------------------------------
+%p Used in conjunction with the <code>pre</code> element:
+
+-# Example
+= featureExample do
+  %pre
+    %code
+      :preserve
+        function getJello() {
+          echo $aDeliciousSnack;
+        }
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <pre>
+      <code>
+        function getJello() {
+          echo $aDeliciousSnack;
+        }
+      </code>
+    </pre>
+-# /Code
+
+
+-# Code with line numbers ----------------------------------------------------
+%p Shown with line numbers:
+
+-# Example
+= featureExample do
+  %pre.prettyprint.lang-html.linenums
+    %code
+      :preserve
+        &lt;?php
+          echo 'Hello World!';
+        ?&gt;
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <pre class="prettyprint lang-html linenums"><code>&lt;?php&#x000A;  echo 'Hello World!';&#x000A;?&gt;</code></pre>
+-# /Code

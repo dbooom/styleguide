@@ -1,0 +1,6 @@
+%ul.widget-list
+  - (1..5).each do
+    %li.widget-list--item
+      %a{ :href => '#' }
+        #{ lorem.words(3).capitalize }
+        %span.widget-list--counter Subscrube

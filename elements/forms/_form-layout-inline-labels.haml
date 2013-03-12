@@ -1,0 +1,47 @@
+-# Form with inline labels ---------------------------------------------------
+%p In some cases you may want to place labels on the same line with an input element, this option will make your form more compact and minimal. To get this done, you have to replace your regular <code>.form-control-label</code> label with inline variation which must be placed inside <code>.form-control-group</code> right after the input field. This type of form can't be switched to horizontal layout type.
+
+-# Example
+= featureExample do
+  %form{ :action => '/' }
+
+    / Control group
+    .form-control-group
+      %input#form-inline-labels-1.form-input-size-xxlarge{ :type => 'text', :placeholder => 'Enter your username…' }
+      %label.form-control-label-inline{ :for => 'form-inline-labels-1' } Username
+
+    \
+
+    / Control group
+    .form-control-group
+      %input#form-inline-labels-2.form-input-size-xxlarge{ :type => 'password', :placeholder => 'Enter your password…' }
+      %label.form-control-label-inline{ :for => 'form-inline-labels-2' } Password
+
+    \
+
+    / Control group
+    .form-control-group
+      %textarea#form-inline-labels-3{ :placeholder => 'Describe yourself in few words…' }
+      %p.form-control-help This is the sample help information about this input field.
+
+    \
+
+    / Form actions
+    .form-actions
+      %button.btn{ :type => 'submit' } Submit
+      %button.btn{ :type => 'reset' } Reset
+
+-# Code
+= featureCode do
+  :numcode
+    <form action="/">
+      <div class="form-control-group">
+        <input id="form-inline-labels-1" placeholder="Enter your username…" type="text">
+        <label class="form-control-label-inline" for="form-inline-labels-1">Username</label>
+      </div>
+
+      <div class="form-actions">
+        <button class="btn" type="submit">Submit</button>
+        <button class="btn" type="reset">Reset</button>
+      </div>
+    </form>

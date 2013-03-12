@@ -1,0 +1,25 @@
+-# Tel (phone) ---------------------------------------------------------------
+%p
+  The input element with a type attribute whose value is "tel" represents a one-line plain-text edit control for entering a telephone number.
+  %br
+  %a{ :href => 'http://www.w3.org/TR/html-markup/input.tel.html', :title => 'Input type tel description'} Read more...
+
+-# Example
+= featureExample do
+  .grid-row
+    .grid-span-6.grid-mobile-span-2
+      %label{ :for => 'form-elements-11' } Tel (phone) <strong>(Normal)</strong>
+      %br
+      %input{ :id => 'form-elements-11', :name => 'form-elements-11', :type => 'tel' }
+
+    .grid-span-6.grid-mobile-span-2
+      %label{ :for => 'form-elements-11-dis' } Tel (phone) <strong>(Disabled)</strong>
+      %br
+      %input{ :id => 'form-elements-11-dis', :name => 'form-elements-11-dis', :type => 'tel', :disabled => 'disabled' }
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <input id="input-id" name="input-name" type="tel" />
+-# /Code

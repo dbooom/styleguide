@@ -1,0 +1,25 @@
+-# Search --------------------------------------------------------------------
+%p
+  The input element with a type attribute whose value is "search" represents a one-line plain-text edit control for entering one or more search terms.
+  %br
+  %a{ :href => 'http://www.w3.org/TR/html-markup/input.search.html', :title => 'Input type search description'} Read more...
+
+-# Example
+= featureExample do
+  .grid-row
+    .grid-span-6.grid-mobile-span-2
+      %label{ :for => 'form-elements-10' } Search <strong>(Normal)</strong>
+      %br
+      %input{ :id => 'form-elements-10', :name => 'form-elements-10', :type => 'search' }
+
+    .grid-span-6.grid-mobile-span-2
+      %label{ :for => 'form-elements-10-dis' } Search <strong>(Disabled)</strong>
+      %br
+      %input{ :id => 'form-elements-10-dis', :name => 'form-elements-10-dis', :type => 'search', :disabled => 'disabled' }
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <input id="input-id" name="input-name" type="search" />
+-# /Code

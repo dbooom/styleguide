@@ -1,0 +1,58 @@
+-# Radio buttons -------------------------------------------------------------
+%p
+  The input element with a type attribute whose value is "radio" represents a selection of one item from a list of items (a radio button).
+  %br
+  %a{ :href => 'http://www.w3.org/TR/html-markup/input.radio.html#input.radio', :title => 'Radio button'} Read more...
+
+-# Example
+= featureExample do
+  .grid-row
+    .grid-span-6.grid-mobile-span-2
+      %strong Normal state
+
+      %br
+
+      %input{ :id => 'form-elements-2-1', :name => 'form-elements-2', :type => 'radio' }
+      %label{ :for => 'form-elements-2-1' } Test radio 1
+
+      %br
+
+      %input{ :id => 'form-elements-2-2', :name => 'form-elements-2', :type => 'radio' }
+      %label{ :for => 'form-elements-2-2' } Test radio 2
+
+      %br
+
+      %input{ :id => 'form-elements-2-3', :name => 'form-elements-2', :type => 'radio' }
+      %label{ :for => 'form-elements-2-3' } Test radio 3
+
+    .grid-span-6.grid-mobile-span-2
+      %strong Disabled
+
+      %br
+
+      %input{ :id => 'form-elements-2-1-dis', :name => 'form-elements-2-dis', :type => 'radio', :disabled => 'disabled' }
+      %label{ :for => 'form-elements-2-1-dis' } Test radio 1
+
+      %br
+
+      %input{ :id => 'form-elements-2-2-dis', :name => 'form-elements-2-dis', :type => 'radio', :disabled => 'disabled' }
+      %label{ :for => 'form-elements-2-2-dis' } Test radio 2
+
+      %br
+
+      %input{ :id => 'form-elements-2-3-dis', :name => 'form-elements-2-dis', :type => 'radio', :disabled => 'disabled' }
+      %label{ :for => 'form-elements-2-3-dis' } Test radio 3
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <input id="input-id" name="input-name" type="radio">
+    <label for="input-id-reference">Test radio 1</label>
+    <br>
+    <input id="input-id" name="input-name" type="radio">
+    <label for="input-id-reference">Test radio 2</label>
+    <br>
+    <input id="input-id" name="input-name" type="radio">
+    <label for="input-id-reference">Test radio 3</label>
+-# /Code

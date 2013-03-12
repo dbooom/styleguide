@@ -1,0 +1,11 @@
+%p.widget-newsletter--desc #{lorem.words(15).capitalize}.
+
+\
+
+%form.widget-newsletter--form{ :action => '.', :method => 'post' }
+  %input.widget-newsletter--submit.btn{ :type => 'submit', :value => 'Subscribe' }
+
+  \
+
+  .widget-newsletter--email-wrapper
+    %input.widget-newsletter--email{ :type => 'email', :name => 'newsletter-email', :placeholder => 'Please enter your email...' }

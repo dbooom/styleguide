@@ -1,0 +1,25 @@
+-# Email ---------------------------------------------------------------------
+%p
+  The input element with a type attribute whose value is "email" represents a control for editing a list of e-mail addresses given in the element’s value.
+  %br
+  %a{ :href => 'http://www.w3.org/TR/html-markup/input.email.html', :title => 'Input type email description'} Read more...
+
+-# Example
+= featureExample do
+  .grid-row
+    .grid-span-6.grid-mobile-span-2
+      %label{ :for => 'form-elements-7' } Email <strong>(Normal)</strong>
+      %br
+      %input{ :id => 'form-elements-7', :name => 'form-elements-7', :type => 'email', :placeholder => 'name@example.com' }
+
+    .grid-span-6.grid-mobile-span-2
+      %label{ :for => 'form-elements-7-dis' } Email <strong>(Disabled)</strong>
+      %br
+      %input{ :id => 'form-elements-7-dis', :name => 'form-elements-7-dis', :type => 'email', :placeholder => 'name@example.com', :disabled => 'disabled' }
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <input id="input-id" name="input-name" type="email" placeholder="name@example.com" />
+-# /Code

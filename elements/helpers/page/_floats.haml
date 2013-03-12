@@ -1,0 +1,27 @@
+-# Floats helpers ------------------------------------------------------------
+%p These simple helpers allow you to align selected elements on one side or another.
+
+-# Example
+= featureExample do
+  %p #{lorem.paragraph}.
+  %img.align-center.image-frame{ :src => lorem.image('300x100'), :alt => 'This image is floated left' }
+  %p #{lorem.paragraph}.
+
+  %hr
+
+  %img.align-left.image-frame{ :src => lorem.image('200x100'), :alt => 'This image is floated left' }
+  %p #{lorem.paragraph}.
+
+  %hr
+
+  %img.align-right.image-frame{ :src => lorem.image('200x100'), :alt => 'This image is floated right' }
+  %p #{lorem.paragraph}.
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <img class="align-center image-frame" src="image" />
+    <img class="align-left image-frame" src="image" />
+    <img class="align-right image-frame" src="image" />
+-# /Code

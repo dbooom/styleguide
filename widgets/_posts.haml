@@ -1,0 +1,34 @@
+%ul.widget-posts--list
+  - (1..count).each do |i|
+    - title = lorem.words(rand(5..8)).capitalize
+
+    /BEGIN - Post item
+    %li.widget-posts--item
+      /BEGIN - Item thumbnail
+      = link_to( '/blog-post.html', :class => 'widget-posts--thumbnail', :title => 'Post thumbnail' ) do
+        %img{ :src => with_assets ? (asset_path :images, 'demo-content/widgets/posts/' + i.to_s + '.png') : lorem.image('60x60'), :alt => 'Post thumbnail image' }
+
+        /BEGIN - Item meta
+        %span.widget-posts--meta
+          %span.widget-posts--comments
+            %span
+              %i.icon-comment
+              =rand(2..60)
+
+          %span.widget-posts--likes
+            %span
+              %i.icon-heart
+              =rand(2..16)
+        /END - Item meta
+      /END - Item thumbnail
+
+      /BEGIN - Item title
+      = link_to( title, '/blog-post.html', :class => 'widget-posts--title' )
+      /END - Item title
+
+      /BEGIN - Item date
+      %time.widget-posts--created{ :datetime => '2012-05-14T23:31:45+01:00' } May 14, 2012
+      /END - Item date
+    /END - Post item
+
+    \

@@ -1,0 +1,40 @@
+-# Blockquote regular --------------------------------------------------------
+%p The <code>blockquote</code> element represents a section that is being quoted from another source.
+
+-# Example
+= featureExample do
+  %blockquote{ :cite => 'http://hansard.millbanksystems.com/commons/1947/nov/11/parliament-bill#column_206'}
+    %p Many forms of Government have been tried, and will be tried in this world of sin and woe. No one pretends that democracy is perfect or all-wise. Indeed, it has been said that democracy is the worst form of government except all those other forms that have been tried from time to time.
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <blockquote cite="http://example.com">
+      <p>Blockquote content.</p>
+    </blockquote>
+-# /Code
+
+
+-# Blockquote in figure ------------------------------------------------------
+%p Additionally, you might wish to cite the source, as in the above example. The correct method involves including the <code>cite</code> attribute on the <code>blockquote</code> element, but since no browser makes any use of that information, it’s useful to link to the source also.
+%p The following example shows, how it is possible to add description and link to the source of <code>blockquote</code> in semantic way using <code>figure</code> markup:
+
+-# Example
+= featureExample do
+  %figure.blockquote
+    %blockquote{ :cite => 'http://hansard.millbanksystems.com/commons/1947/nov/11/parliament-bill#column_206'}
+      %p Many forms of Government have been tried, and will be tried in this world of sin and woe. No one pretends that democracy is perfect or all-wise. Indeed, it has been said that democracy is the worst form of government except all those other forms that have been tried from time to time.
+    %figcaption Winston Churchill, in <a href="http://hansard.millbanksystems.com/commons/1947/nov/11/parliament-bill#column_206">a speech to the House of Commons</a>. 11th November 1947
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <figure class="blockquote">
+      <blockquote cite="http://example.com">
+        <p>Blockquote content.
+      </blockquote>
+      <figcaption>Bloquote's source.</figcaption>
+    </figure>
+-# /Code

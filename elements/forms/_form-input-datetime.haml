@@ -1,0 +1,25 @@
+-# Datetime ------------------------------------------------------------------
+%p
+  The input element with a type attribute whose value is "datetime" represents a control for setting the element’s value to a string representing a global date and time (with timezone information).
+  %br
+  %a{ :href => 'http://www.w3.org/TR/html-markup/input.datetime.html', :title => 'Input type datetime description'} Read more...
+
+-# Example
+= featureExample do
+  .grid-row
+    .grid-span-6.grid-mobile-span-2
+      %label{ :for => 'form-elements-12' } Datetime <strong>(Normal)</strong>
+      %br
+      %input{ :id => 'form-elements-12', :name => 'form-elements-12', :type => 'datetime' }
+
+    .grid-span-6.grid-mobile-span-2
+      %label{ :for => 'form-elements-12-dis' } Datetime <strong>(Disabled)</strong>
+      %br
+      %input{ :id => 'form-elements-12-dis', :name => 'form-elements-12-dis', :type => 'datetime', :disabled => 'disabled' }
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <input id="input-id" name="input-name" type="datetime" />
+-# /Code

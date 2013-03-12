@@ -1,0 +1,25 @@
+-# File ----------------------------------------------------------------------
+%p
+  The input element with a type attribute whose value is "file" represents a list of file items, each consisting of a file name, a file type, and a file body (the contents of the file).
+  %br
+  %a{ :href => 'http://www.w3.org/TR/html-markup/input.file.html', :title => 'Input type file description'} Read more...
+
+-# Example
+= featureExample do
+  .grid-row
+    .grid-span-6.grid-mobile-span-2
+      %label{ :for => 'form-elements-17' } File <strong>(Normal)</strong>
+      %br
+      %input{ :id => 'form-elements-17', :name => 'form-elements-17', :type => 'file' }
+
+    .grid-span-6.grid-mobile-span-2
+      %label{ :for => 'form-elements-17-dis' } File <strong>(Disabled)</strong>
+      %br
+      %input{ :id => 'form-elements-17-dis', :name => 'form-elements-17-dis', :type => 'file', :disabled => 'disabled' }
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <input id="input-id" name="input-name" type="file" />
+-# /Code

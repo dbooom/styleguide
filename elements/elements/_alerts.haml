@@ -1,0 +1,68 @@
+-# Alerts --------------------------------------------------------------------
+%p Alerts - are special content boxes with some additional meaning. They are intended to inform user about some important information.
+
+-# Example
+= featureExample do
+  = alert do
+    <strong>Hey!</strong> Wellcome back to our family.
+
+  = alert(false, 'alert-block') do
+    <strong>Hey!</strong> This is the block type alert.
+
+  = alert('Alert with a title!') do
+    <strong>Hey!</strong> Wellcome back to our family.
+
+  %hr
+
+  = alert(false, 'alert-success') do
+    <strong>Well done!</strong> You successfully read this important alert message.
+
+  = alert(false, 'alert-info') do
+    <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+
+  = alert(false, 'alert-warning') do
+    <strong>Warning!</strong> Best check yo self, you're not looking too good.
+
+  = alert(false, 'alert-error') do
+    <strong>Oh snap!</strong> Change a few things up and try submitting again.
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    // Regular alert
+    <div class="alert">
+      <strong>Hey!</strong> Wellcome back to our family.
+    </div>
+
+    // Block type alert
+    <div class="alert alert-block">
+      <strong>Hey!</strong> This is the block type alert.
+    </div>
+
+    // Alert with title
+    <div class="alert">
+      <h4 class="alert--title">Hello there!</h4>
+      <strong>Hey!</strong> Wellcome back to our family.
+    </div>
+
+    // Success alert
+    <div class="alert alert-success">
+      <strong>Well done!</strong> You successfully read this important alert message.
+    </div>
+
+    // Info alert
+    <div class="alert alert-info">
+      <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+    </div>
+
+    // Warning alert
+    <div class="alert alert-warning">
+      <strong>Warning!</strong> Best check yo self, you're not looking too good.
+    </div>
+
+    // Error alert
+    <div class="alert alert-error">
+      <strong>Oh snap!</strong> Change a few things up and try submitting again.
+    </div>
+-# /Code

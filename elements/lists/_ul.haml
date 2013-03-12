@@ -1,0 +1,63 @@
+-# Unordered list ------------------------------------------------------------
+%p The <code>ul</code> element denotes an unordered list (i.e. a list of loose items that don’t require numbering, or a bulleted list). Again, each item requires a surrounding <code>&lt;li&gt;</code> and <code>&lt;/li&gt;</code> tag, to denote individual items. Here is an example list showing the constituent parts of the British Isles:
+
+-# Example
+= featureExample do
+  %ul
+    %li
+      United Kingdom of Great Britain and Northern Ireland:
+      %ul
+        %li England
+        %li Scotland
+        %li Wales
+        %li Northern Ireland
+    %li Republic of Ireland
+    %li Isle of Man
+    %li
+      Channel Islands:
+      %ul
+        %li Bailiwick of Guernsey
+        %li Bailiwick of Jersey
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <ul>
+      <li>
+        United Kingdom of Great Britain and Northern Ireland:
+        <ul>
+          <li>England</li>
+          <li>Scotland</li>
+          <li>Wales</li>
+          <li>Northern Ireland</li>
+        </ul>
+      </li>
+      <li>Republic of Ireland</li>
+    </ul>
+-# /Code
+
+
+-# Unordered list with block element -----------------------------------------
+%p Sometimes we may want each list item to contain block elements, typically a paragraph or two.
+
+-# Example
+= featureExample do
+  %ul
+    %li
+      %p The British Isles is an archipelago consisting of the two large islands of Great Britain and Ireland, and many smaller surrounding islands.
+    %li
+      %p Great Britain is the largest island of the archipelago. Ireland is the second largest island of the archipelago and lies directly to the west of Great Britain.
+    %li
+      %p The full list of islands in the British Isles includes over 1,000 islands, of which 51 have an area larger than 20 km<sup>2</sup>.
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <ul>
+      <li>
+        <p>The British Isles is an archipelago consisting of the two large islands of Great Britain and Ireland, and many smaller surrounding islands.</p>
+      </li>
+    </ul>
+-# /Code

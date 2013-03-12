@@ -1,0 +1,32 @@
+-# Progress bars -------------------------------------------------------------
+%p Progress bars may have many different use cases. They can show loading, progress statuses etc. Also they can be used to show some kind of skill levels or similar information.
+
+
+-# Example
+= featureExample do
+  %strong Regular
+  = progressBar('60%')
+
+  %strong Inversed
+  = progressBar('50%', 'progress-bar-inverse')
+
+  %strong Success
+  = progressBar('40%', 'progress-bar-success')
+
+  %strong Info
+  = progressBar('30%', 'progress-bar-info')
+
+  %strong Warning
+  = progressBar('20%', 'progress-bar-warning')
+
+  %strong Error
+  = progressBar('10%', 'progress-bar-error')
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <div class="progress-bar">
+      <div class="progress-bar--value" style="width: 60%;"></div>
+    </div>
+-# /Code

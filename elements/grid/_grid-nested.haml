@@ -1,0 +1,29 @@
+-# Grid nesting --------------------------------------------------------------
+%p In nesting grid, cells width will be calculated relative to the parent grid cell.
+
+-# Example
+= featureExample do
+  .grid-row
+    .grid-span-12
+      .show-grid
+        %p Level 1 column
+        .grid-row
+          .grid-span-6
+            .show-grid Level 2
+          .grid-span-6
+            .show-grid Level 2
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <div class="grid-row">
+      <div class="grid-span-12">
+        Level 1 column
+        <div class="grid-row">
+          <div class="grid-span-6">Level 2</div>
+          <div class="grid-span-6">Level 2</div>
+        </div>
+      </div>
+    </div>
+-# /Code

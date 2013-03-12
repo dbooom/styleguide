@@ -1,0 +1,25 @@
+-# URL -----------------------------------------------------------------------
+%p
+  The input element with a type attribute whose value is "url" represents a control for editing an absolute URL given in the element’s value.
+  %br
+  %a{ :href => 'http://www.w3.org/TR/html-markup/input.url.html', :title => 'Input type URL description'} Read more...
+
+-# Example
+= featureExample do
+  .grid-row
+    .grid-span-6.grid-mobile-span-2
+      %label{ :for => 'form-elements-6' } URL <strong>(Normal)</strong>
+      %br
+      %input{ :id => 'form-elements-6', :name => 'form-elements-6', :type => 'url', :placeholder => 'http://example.com' }
+
+    .grid-span-6.grid-mobile-span-2
+      %label{ :for => 'form-elements-6-dis' } URL <strong>(Disabled)</strong>
+      %br
+      %input{ :id => 'form-elements-6-dis', :name => 'form-elements-6-dis', :type => 'url', :placeholder => 'http://example.com', :disabled => 'disabled' }
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <input id="input-id" name="input-name" type="url" placeholder="http://example.com" />
+-# /Code

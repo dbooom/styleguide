@@ -1,0 +1,5 @@
+%ul.widget-list
+  - (1..5).each do
+    %li.widget-list--item
+      %a.widget-posts-list--title{ :href => '#' } #{ lorem.words(5).capitalize }...
+      %time.widget-posts-list--created{ :datetime => '2012-05-14T23:31:45+01:00' } May 14, 2012

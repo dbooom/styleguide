@@ -1,0 +1,78 @@
+-# Form layout horizontal ----------------------------------------------------
+%p The second layout type is horizontal. This time labels are placed aside from form input and help text.
+
+-# Example
+= featureExample do
+  %form.form-layout-horizontal{ :action => '/' }
+    %p.form-description This is a sample description text which should tell us about purpose of this form, and may be give us some tips about how to fill it correctly and submit to the server.
+
+    \
+
+    / Control group
+    .form-control-group
+      %label.form-control-label{ :for => 'form-layout-horizontal-1' } Username
+      .form-control
+        %input#form-layout-horizontal-1.form-input-size-xxlarge{ :type => 'text', :placeholder => 'Enter your username…' }
+        %p.form-control-help This is the sample help information about this input field.
+
+    \
+
+    / Control group
+    .form-control-group
+      %label.form-control-label{ :for => 'form-layout-horizontal-2' } Password
+      .form-control
+        %input#form-layout-horizontal-2.form-input-size-xxlarge{ :type => 'password', :placeholder => 'Enter your username…' }
+        %p.form-control-help This is the sample help information about this input field.
+
+    \
+
+    / Control group
+    .form-control-group
+      %label.form-control-label{ :for => 'form-layout-horizontal-3' } Short bio
+      .form-control
+        %textarea#form-layout-horizontal-3{ :placeholder => 'Describe yourself in few words…' }
+        %p.form-control-help This is the sample help information about this input field.
+
+    \
+
+    / Control group
+    .form-control-group
+      %label.form-control-label{ :for => 'form-layout-horizontal-4' } Privacy policy
+      .form-control
+        %input#form-layout-horizontal-4{ :type => 'checkbox' }
+        %label{ :for => 'form-layout-horizontal-4' } Yes I agree to the following:
+        .form-control-help
+          %ul
+            %li #{lorem.words(7).capitalize}.
+            %li #{lorem.words(15).capitalize}.
+            %li #{lorem.words(10).capitalize}.
+
+    \
+
+    / Form actions
+    .form-actions
+      %button.btn{ :type => 'submit' } Submit
+      %button.btn{ :type => 'reset' } Reset
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <form class="form-layout-horizontal" action="" method="">
+      <p class="form-description">Some description text for this form.</p>
+
+      <div class="form-control-group">
+        <label class="form-control-label" for="input-id-reference">Sample text input</label>
+
+        <div class="form-control">
+          <input id="input-id" placeholder="Type something…" type="text">
+          <p class="form-control-help">This is the sample help information about this input field.</p>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+-# /Code

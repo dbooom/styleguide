@@ -1,0 +1,105 @@
+-# Pricing table -------------------------------------------------------------
+%p A pricing table is extremly useful component almost on every website. This is a great way to provide customer with comprehensive list of available features and prices.
+
+-# Example
+= featureExample do
+  .grid-row
+
+    -# Plan item -------------------------------------------------------------
+    .grid-span-4
+      /BEGIN - Pricing table
+      .pricing-table
+        /BEGIN - Pricing table title
+        %h4.pricing-table--title Plan name
+        /END - Pricing table title
+
+        /BEGIN - Pricing table price
+        .pricing-table--price 99$/mo
+        /END - Pricing table price
+
+        /BEGIN - Pricing table features
+        %ul.pricing-table--features
+          %li.pricing-table--feature Up to 10 Users
+          %li.pricing-table--feature 10 GB Free Space
+          %li.pricing-table--feature 3 Worskpaces
+          %li.pricing-table--feature.is-cons 5 Plugins
+          %li.pricing-table--feature Unlimited Sets
+        /END - Pricing table features
+
+        /BEGIN - Pricing table actions
+        %a.pricing-table--action{ :href => '#' } Sign Up
+        /END - Pricing table actions
+      /END - Pricing table
+
+    -# Plan item -------------------------------------------------------------
+    .grid-span-4
+      /BEGIN - Pricing table
+      .pricing-table
+        /BEGIN - Pricing table title
+        %h4.pricing-table--title Plan name
+        /END - Pricing table title
+
+        /BEGIN - Pricing table price
+        .pricing-table--price 99$/mo
+        /END - Pricing table price
+
+        /BEGIN - Pricing table features
+        %ul.pricing-table--features
+          %li.pricing-table--feature Up to 10 Users
+          %li.pricing-table--feature 10 GB Free Space
+          %li.pricing-table--feature 3 Worskpaces
+          %li.pricing-table--feature.is-cons 5 Plugins
+          %li.pricing-table--feature Unlimited Sets
+        /END - Pricing table features
+
+        /BEGIN - Pricing table actions
+        %a.pricing-table--action{ :href => '#' } Sign Up
+        /END - Pricing table actions
+      /END - Pricing table
+
+    -# Plan item -------------------------------------------------------------
+    .grid-span-4
+      /BEGIN - Pricing table
+      .pricing-table
+        /BEGIN - Pricing table title
+        %h4.pricing-table--title Plan name
+        /END - Pricing table title
+
+        /BEGIN - Pricing table price
+        .pricing-table--price 99$/mo
+        /END - Pricing table price
+
+        /BEGIN - Pricing table features
+        %ul.pricing-table--features
+          %li.pricing-table--feature Up to 10 Users
+          %li.pricing-table--feature 10 GB Free Space
+          %li.pricing-table--feature 3 Worskpaces
+          %li.pricing-table--feature.is-cons 5 Plugins
+          %li.pricing-table--feature Unlimited Sets
+        /END - Pricing table features
+
+        /BEGIN - Pricing table actions
+        %a.pricing-table--action{ :href => '#' } Sign Up
+        /END - Pricing table actions
+      /END - Pricing table
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <div class="pricing-table">
+      <h4 class="pricing-table--title">Plan name</h4>
+
+      <div class="pricing-table--price">99$/mo</div>
+
+      <ul class="pricing-table--features">
+        <li class="pricing-table--feature">Up to 10 Users</li>
+        <li class="pricing-table--feature">10 GB Free Space</li>
+        <li class="pricing-table--feature">3 Worskpaces</li>
+        <li class="pricing-table--feature">5 Plugins</li>
+        <li class="pricing-table--feature">Unlimited Sets</li>
+      </ul>
+
+      <a class="pricing-table--action" href="#">Sign Up</a>
+    </div>
+-# /Code

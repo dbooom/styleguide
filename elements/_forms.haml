@@ -1,0 +1,130 @@
+-# Layout types
+%h4.styleguide-section--sub-title Form layout types
+%p Forms may be styled with several different layout variations. There are two interchangeable layout types with regular and horizontal form elements flow and couple of additional layout customizations.
+
+%hr
+
+%p Each form may be switched from regular (one after another) layout type to horizontal by simply applying single css class to it. However, specific structure and hierarchy must be used to gain complete flexibility.
+
+%p First of all, form contains few logical entities:
+%ul
+  %li <code>.form-description</code> - optional element which role is to describe purpose of the current form
+  %li
+    <code>.form-control-group</code> - this is the holder for grouped form elements which are:
+    %ul
+      %li <code>.form-control-label</code> - label for the control item
+      %li
+        <code>.form-control</code> - this is another grouping element for:
+        %ul
+          %li <code>input</code> - may be any form input type
+          %li <code>.form-control-help</code> - help text for current element
+
+  %li <code>.form-actions</code> - this is the holder for submits, resets and other form buttons.
+
+-# Form layout regular
+%h5 Form layout - regular
+=partial( 'lib/elements/forms/form-layout-regular' )
+
+-# Form layout horizontal
+%h5 Form layout - horizontal
+=partial( 'lib/elements/forms/form-layout-horizontal' )
+
+-# Form labels inline
+%h5 Forms with inline labels
+=partial( 'lib/elements/forms/form-layout-inline-labels' )
+
+-# Form layout inline
+%h5 Inline forms
+=partial( 'lib/elements/forms/form-layout-inline' )
+
+
+-# Input sizes
+%h4.styleguide-section--sub-title Form input sizes
+%p Several different input sizes may be used in form construction scenarios. To apply one of them, just add predefined css class to selected form input element.
+=partial( 'lib/elements/forms/form-inputs-sizes' )
+
+
+-# Form elements
+%h4.styleguide-section--sub-title Form elements
+%p Below you can find common form elements and input types. Each element has short description with the link to the complete information about it.
+
+%form{ :action => '#', :method => 'post' }
+  -# Checkboxes
+  %h5 Checkboxes
+  =partial( 'lib/elements/forms/form-checkbox' )
+
+  -# Radio buttons
+  %h5 Radio buttons
+  =partial( 'lib/elements/forms/form-radios' )
+
+  -# Select
+  %h5 Select (drop-down list)
+  =partial( 'lib/elements/forms/form-select' )
+
+  -# Select
+  %h5 Select (multiple)
+  =partial( 'lib/elements/forms/form-select-multiple' )
+
+  -# Textarea
+  %h5 Textarea
+  =partial( 'lib/elements/forms/form-textarea' )
+
+  -# URL
+  %h5 URL
+  =partial( 'lib/elements/forms/form-input-url' )
+
+  -# Email
+  %h5 Email
+  =partial( 'lib/elements/forms/form-input-email' )
+
+  -# Password
+  %h5 Password
+  =partial( 'lib/elements/forms/form-input-password' )
+
+  -# Search
+  %h5 Search
+  =partial( 'lib/elements/forms/form-input-search' )
+
+  -# Tel
+  %h5 Tel (phone)
+  =partial( 'lib/elements/forms/form-input-tel' )
+
+  -# Date
+  %h5 Date
+  =partial( 'lib/elements/forms/form-input-date' )
+
+  -# Datetime
+  %h5 Datetime
+  =partial( 'lib/elements/forms/form-input-datetime' )
+
+  -# Datetime local
+  %h5 Datetime local
+  =partial( 'lib/elements/forms/form-input-datetime-local' )
+
+  -# Month
+  %h5 Month
+  =partial( 'lib/elements/forms/form-input-month' )
+
+  -# Number
+  %h5 Number
+  =partial( 'lib/elements/forms/form-input-number' )
+
+  -# Range
+  %h5 Range
+  =partial( 'lib/elements/forms/form-input-range' )
+
+  -# File
+  %h5 File
+  =partial( 'lib/elements/forms/form-input-file' )
+
+  -# Submit
+  %h5 Submit
+  =partial( 'lib/elements/forms/form-input-submit' )
+
+  -# Button
+  %h5 Button
+  =partial( 'lib/elements/forms/form-input-button' )
+
+  -# Reset
+  %h5 Reset
+  =partial( 'lib/elements/forms/form-input-reset' )

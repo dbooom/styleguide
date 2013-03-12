@@ -1,0 +1,25 @@
+-# Range ---------------------------------------------------------------------
+%p
+  The input element with a type attribute whose value is "range" represents an imprecise control for setting the element’s value to a string representing a number.
+  %br
+  %a{ :href => 'http://www.w3.org/TR/html-markup/input.range.html', :title => 'Input type range description'} Read more...
+
+-# Example
+= featureExample do
+  .grid-row
+    .grid-span-6.grid-mobile-span-2
+      %label{ :for => 'form-elements-16' } Range <strong>(Normal)</strong>
+      %br
+      %input{ :id => 'form-elements-16', :name => 'form-elements-16', :type => 'range' }
+
+    .grid-span-6.grid-mobile-span-2
+      %label{ :for => 'form-elements-16-dis' } Range <strong>(Disabled)</strong>
+      %br
+      %input{ :id => 'form-elements-16-dis', :name => 'form-elements-16-dis', :type => 'range', :disabled => 'disabled' }
+-# /Example
+
+-# Code
+= featureCode do
+  :numcode
+    <input id="input-id" name="input-name" type="range" />
+-# /Code

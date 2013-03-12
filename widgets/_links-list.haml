@@ -1,0 +1,7 @@
+%ul.widget-list
+  - (1..5).each do |i|
+    %li.widget-list--item
+      %a{ :href => '#' }
+        #{ lorem.words(3).capitalize }
+        - if i == 3 || i == 5
+          %span.widget-list--counter External
